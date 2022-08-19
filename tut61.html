@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Math object tutorial</h1>
+    </div>
+
+    <script>
+        let m = Math;
+        console.log(m);
+        
+        // Printing the objects from math object
+        console.log("The value of Math.E is ",m.E);
+        console.log("The value of Math.E is ",m.LN2);
+        console.log("The value of Math.LOG2E is",m.LOG2E);
+        console.log("The value of Math.PI is ",m.PI);
+        console.log("The value of Math.SQRT1_2 is ",m.SQRT1_2);
+        console.log("The value of Math.SQRT2 is ",m.SQRT2);
+
+        // Printing the functions from math object
+        let a = 34.4565767;
+        let b = 89;
+
+        console.log("The value of a and b is ", a,b);
+        console.log("The value of a and b rounded is ", m.round(a),m.round(b));
+
+        console.log("3 raised to the power 2 is ",m.pow(3,2));
+        console.log("4 raised to the power 2 is ",m.pow(4,2));
+        
+        console.log("Square root of 36 is ",m.sqrt(36));
+        console.log("Square root of 62 is ",m.sqrt(62));
+        console.log("Square root of 50 is ",m.sqrt(50));
+        
+        console.log("5.8 rounded up to nearest integer is ",m.ceil(5.8));
+        console.log("5.8 rounded down to nearest integer is ",m.floor(5.8));
+        
+        console.log("Absolute value of 5.66 is ",m.abs(5.66));
+        console.log("Absolute value of -5.66 is ",m.abs(-5.66));
+        
+        console.log("value of sin(pi) is ",m.sin(m.PI));
+        console.log("value of sin(pi/2) is ",m.sin(m.PI/2));
+        
+        
+        console.log("minimum value of 4,6,23 is ",m.min(4,6,23));
+        console.log("max value of 4,6,23 is ",m.max(4,6,23));
+        
+        let r = m.random();
+        //Random number between (a,b) = a+ (b-a)*Math.random()
+        let a1 =50;
+        let b1 =60;
+        // let r1_100 =a1 +(b1-a1)*m.random();
+        console.log("The random number is  ",r);
+        // console.log("The random number is  ",r1_100);
+        
+        let r50_60 =a1 +(b1-a1)*m.random();
+        console.log("The random number between ",a1 ,"and",b1, "is", m.ceil(r50_60) );  
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+</head>
+<style>
+    .container{
+        height: 344px;
+        width: 100%;
+        border: 2px solid black;
+        /* initialize the container as flex box  */
+        display: flex;
+
+        /* flex properties for flex container */
+        flex-direction: row; /* Default value is row*/
+        /* flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: space-evenly;
+
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch;
+    }
+    .item{
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;
+        width: 200px;
+        height: 200px;
+    }
+    #box-1{
+        /*Flex properties for a flex item */
+        flex-grow: 7;
+        order: 2;
+    }
+    #box-3{
+        flex-grow: 5;
+        order: 1;
+    }
+    /* #box-2{}
+    #box-4{}
+    #box-5{}
+    #box-6{} */
+
+</style>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="box-1">First box</div>
+        <div class="item" id="box-2">Second box</div>
+        <div class="item" id="box-3">Third box</div>
+        <div class="item" id="box-4">Fourth box</div>
+        <div class="item" id="box-5">Fifth box</div>
+        <div class="item" id="box-6">Sixth box</div>
+    </div>
+</body>
+</html>

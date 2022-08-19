@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            border: 2px solid red;
+            margin: 23px 12px;
+            background-color: rgb(181, 237, 241);
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 23px rgb(188, 245, 188); */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color ; */
+            /* box-shadow: 10px 5px 20px 3px rgb(23, 230, 23); */
+
+            box-shadow: inset 3px 5px rgb(23, 230, 23);
+            box-shadow: 5px 7px rgb(23, 230, 23), 10px 14px indianred;
+
+        }
+        .card h2{
+            /* text-shadow: 1px 2px red; */
+            text-shadow: 1px 2px 4px mediumslateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h2>This is C++ course</h2> 
+           <p>This C++ course has started
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum dolores aspernatur placeat excepturi earum similique voluptatem inventore ea nam voluptate accusamus, officia qui perspiciatis minus veritatis quaerat blanditiis explicabo at quia molestiae est!</p>
+        </div>
+        <div class="card" id="card-2">
+           <h2>This is HTML course</h2> 
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis facilis alias tempore minus unde corrupti deserunt culpa nesciunt quis, iusto labore architecto totam odit nihil illum dignissimos eum molestiae eius voluptatum perferendis voluptates?</p>
+        </div>
+        <div class="card" id="card-3">
+           <h2>Card3</h2> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis facilis alias tempore minus unde corrupti deserunt culpa nesciunt quis, iusto labore architecto totam odit nihil illum dignissimos eum molestiae eius voluptatum perferendis voluptates?</p>
+        </div>
+    </div>
+</body>
+</html>

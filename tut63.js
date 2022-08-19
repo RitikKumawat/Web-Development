@@ -1,0 +1,71 @@
+// console.log("hello world");
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+//   res.end('Hello World this is ritik');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pseudo selectors & more designing</title>
+      <style>
+          .container{
+              border: 2px solid red;
+              background-color: rgb(214 255 245);
+              padding: 34px;
+              margin: 34px auto;
+              width: 666px;
+          }
+          a{
+              text-decoration: none;
+              color: black;
+          }
+          a:hover{
+              color: black;
+              background-color: coral;
+          }
+          a:visited{
+              color: aliceblue;
+          }
+          a:active{
+              background-color: blueviolet;
+          }
+          .btn{
+              font-family: 'Times New Roman', Times, serif;
+              font-weight: bold;
+              background-color: crimson;
+              padding: 6px;
+              border: none;
+              cursor: pointer;
+              font-size: 13px;
+              border-radius: 4px;
+          }
+          .btn:hover{
+              color: darkgoldenrod;
+              background-color: lightseagreen;
+              border: 2px solid black;
+          }
+      </style>
+  
+  </head>
+  <body>
+      <div class="container" id="cont1">
+          <h3>This is my heading</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit incidunt placeat modi iure praesentium repellat, fugiat cupiditate temporibus saepe qui aliquid tempore? Pariatur quod optio quam illum accusamus in dolorum ducimus odio officiis nesciunt.</p>
+          <a href="https://google.com"class="btn">Read more</a>
+          <button class="btn">Contact us</button>
+      </div>    
+  </body>
+  </html>`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
